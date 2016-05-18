@@ -903,7 +903,7 @@ class TestWrapper(unittest.TestCase):
 
                         hello();""", "test", 10, 10).run()
                     self.fail()
-                except JSError, e:
+                except JSError as e:
                     self.assert_(str(e).startswith('JSError: Error: hello world ( test @ 14 : 34 )  ->'))
                     self.assertEqual("Error", e.name)
                     self.assertEqual("hello world", e.message)
