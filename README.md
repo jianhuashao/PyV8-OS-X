@@ -32,7 +32,7 @@ A convenient way to install is using pip. You can install within a
 
 To install with pip directly from this git repo, use the command:
 ```
-pip install -e git://github.com/brokenseal/PyV8-OS-X#egg=pyv8
+pip install -e git://github.com/jianhuashao/PyV8-OS-X#egg=pyv8
 ```
 (see the "Git Read-Only" URL above for the path).
 
