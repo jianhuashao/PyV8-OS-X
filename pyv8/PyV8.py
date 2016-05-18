@@ -735,7 +735,7 @@ class TestContext(unittest.TestCase):
 
             self.assertEquals(3, int(env1.eval("prop")))
 
-            print env1.eval("env1")
+            print(env1.eval("env1"))
 
             with env2:
                 self.assertEquals(3, int(env2.eval("this.env1.prop")))
@@ -1663,7 +1663,7 @@ if __name__ == '__main__':
 
     if "-p" in sys.argv:
         sys.argv.remove("-p")
-        print "Press any key to continue..."
+        print("Press any key to continue...")
         raw_input()
 
     logging.basicConfig(level=level, format='%(asctime)s %(levelname)s %(message)s')
