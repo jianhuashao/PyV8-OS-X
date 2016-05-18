@@ -2,12 +2,16 @@
 # -*- coding: utf-8 -*-
 from __future__ import with_statement, print_function
 
-import sys, os
+import sys, os, io
 
 try:
-    from cStringIO import StringIO
-except ImportError:
     from StringIO import StringIO
+except ImportError:
+    from io import StringIO
+#try:
+#    from cStringIO import StringIO
+#except ImportError:
+#    from StringIO import StringIO
 
 try:
     import json
